@@ -1,0 +1,61 @@
+name: DotNetProxy
+version: 0.0.1
+cabal-version: -any
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+copyright:
+maintainer: Guilherme Oliveira
+build-depends: base -any
+stability: Alfa
+homepage:
+package-url:
+bug-reports:
+synopsis: .NET Framework proxy
+description: Contains proxies for .NET framework
+category:
+author: Guilherme Oliveira
+tested-with:
+data-files:
+data-dir: ""
+extra-source-files:
+extra-tmp-files:
+exposed-modules: DotNet.System.Windows.Controls.TextBox
+                 DotNet.System.Windows.Controls DotNet.System.Windows
+                 DotNet.System.Windows.Controls.ContentControl
+                 DotNet.System.Windows.Controls.Label
+                 DotNet.System.Windows.RoutedEventHandler
+                 DotNet.System.Windows.RoutedEventArgs
+                 DotNet.System.Windows.Controls.Button
+                 DotNet.System.Windows.FrameworkElement
+                 DotNet.System.Windows.Markup.XamlReader DotNet.System.Xml.XmlReader
+                 DotNet.System DotNet.System.Uri DotNet.System.Object
+                 DotNet.System.Math DotNet.System.EventHandler
+                 DotNet.System.EventArgs DotNet.System.Windows.Window
+                 DotNet.System.Windows.Forms DotNet.System.Windows.Application
+                 DotNet.System.Windows.Forms.Form
+                 DotNet.System.Windows.Forms.Control
+                 DotNet.System.Windows.Forms.Application
+exposed: True
+buildable: True
+build-tools:
+cpp-options:
+cc-options:
+ld-options:
+pkgconfig-depends:
+frameworks:
+c-sources:
+extensions: MagicHash
+extra-libraries:
+extra-lib-dirs:
+includes:
+install-includes:
+include-dirs:
+hs-source-dirs: src
+other-modules:
+ghc-prof-options:
+ghc-shared-options:
+ghc-options: -fext-core
+hugs-options:
+nhc98-options:
+jhc-options:

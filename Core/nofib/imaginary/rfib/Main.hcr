@@ -1,0 +1,31 @@
+%module main:Main
+  %rec
+  {printrvC :: ghczmprim:GHCziTypes.Int ->
+               (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:SystemziIO.print @ ghczmprim:GHCziTypes.Int
+     base:GHCziShow.zdf16;
+   nfibrfo :: ghczmprim:GHCziTypes.Int -> ghczmprim:GHCziTypes.Int =
+     \ (nafq::ghczmprim:GHCziTypes.Int) ->
+         %case ghczmprim:GHCziTypes.Int (base:GHCziClasses.zlze
+                                         @ ghczmprim:GHCziTypes.Int base:GHCziBase.zdf1 nafq
+                                         (ghczmprim:GHCziTypes.Izh (1::ghczmprim:GHCziPrim.Intzh)))
+         %of (wildB1::ghczmprim:GHCziBool.Bool)
+           {ghczmprim:GHCziBool.False ->
+              base:GHCziNum.zp @ ghczmprim:GHCziTypes.Int base:GHCziNum.zdf6
+              (base:GHCziNum.zp @ ghczmprim:GHCziTypes.Int base:GHCziNum.zdf6
+               (nfibrfo
+                (base:GHCziNum.zm @ ghczmprim:GHCziTypes.Int base:GHCziNum.zdf6
+                 nafq (ghczmprim:GHCziTypes.Izh (1::ghczmprim:GHCziPrim.Intzh))))
+               (nfibrfo
+                (base:GHCziNum.zm @ ghczmprim:GHCziTypes.Int base:GHCziNum.zdf6
+                 nafq (ghczmprim:GHCziTypes.Izh (2::ghczmprim:GHCziPrim.Intzh)))))
+              (ghczmprim:GHCziTypes.Izh (1::ghczmprim:GHCziPrim.Intzh));
+            ghczmprim:GHCziBool.True ->
+              ghczmprim:GHCziTypes.Izh (1::ghczmprim:GHCziPrim.Intzh)};
+   main:Main.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     printrvC
+     (nfibrfo
+      (ghczmprim:GHCziTypes.Izh (30::ghczmprim:GHCziPrim.Intzh)));
+   main:ZCMain.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziTopHandler.runMainIO @ ghczmprim:GHCziUnit.Z0T
+     main:Main.main};

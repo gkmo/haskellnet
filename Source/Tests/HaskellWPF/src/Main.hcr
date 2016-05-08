@@ -1,0 +1,169 @@
+%module main:Main
+  %rec
+  {runrD5 :: DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+             ->
+             DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.Application
+             -> (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.run
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.Application
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.zdf4
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.zdf3;
+   addClickrD7 :: DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventHandler.RoutedEventHandler
+                  ->
+                  DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                  -> (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.addClick
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.zdf5;
+   createWindowrmc :: (ghczmprim:GHCziTypes.ZMZN
+                       ghczmprim:GHCziTypes.Char)
+                      ->
+                      (base:GHCziIOBase.IO
+                       DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window) =
+     \ (pathamk::(ghczmprim:GHCziTypes.ZMZN
+                  ghczmprim:GHCziTypes.Char)) ->
+         base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+         @ DotNetProxyzm0zi0zi1:DotNetziSystemziXmlziXmlReader.XmlReader
+         @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+         (DotNetProxyzm0zi0zi1:DotNetziSystemziXmlziXmlReader.create
+          pathamk)
+         (\ (xmlamm::DotNetProxyzm0zi0zi1:DotNetziSystemziXmlziXmlReader.XmlReader) ->
+              base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+              @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+              @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+              (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziMarkupziXamlReader.load
+               xmlamm)
+              (\ (oamo::DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) ->
+                   %case ((base:GHCziIOBase.IO
+                           DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window)) (base:DataziTypeable.cast
+                                                                                          @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                                                                          @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+                                                                                          DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf1
+                                                                                          DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.zdf1
+                                                                                          oamo)
+                   %of (wildB1::(base:DataziMaybe.Maybe
+                                 DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window))
+                     {base:DataziMaybe.Nothing ->
+                        base:GHCziErr.error
+                        @ ((base:GHCziIOBase.IO
+                            DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window))
+                        (base:GHCziBase.unpackCStringzh
+                         ("Not a Window"::ghczmprim:GHCziPrim.Addrzh));
+                      base:DataziMaybe.Just
+                      (wamq::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window) ->
+                        base:GHCziBase.return @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+                        @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+                        wamq}));
+   setContentrD9 :: (ghczmprim:GHCziTypes.ZMZN
+                     ghczmprim:GHCziTypes.Char)
+                    ->
+                    DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                    -> (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziContentControl.setContent
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.zdf3;
+   onClickrme :: DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object ->
+                 DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventArgs.RoutedEventArgs
+                 -> (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     \ (senderams::DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object)
+       (argsamu::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventArgs.RoutedEventArgs) ->
+         %case ((base:GHCziIOBase.IO
+                 ghczmprim:GHCziUnit.Z0T)) (base:DataziTypeable.cast
+                                            @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                            @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                                            DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf1
+                                            DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.zdf1
+                                            senderams)
+         %of (wildB1::(base:DataziMaybe.Maybe
+                       DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button))
+           {base:DataziMaybe.Nothing ->
+              base:GHCziErr.error
+              @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T))
+              (base:GHCziBase.unpackCStringzh
+               ("Not a Window"::ghczmprim:GHCziPrim.Addrzh));
+            base:DataziMaybe.Just
+            (bamw::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button) ->
+              DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+              @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+              @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) bamw
+              (setContentrD9
+               (base:GHCziBase.unpackCStringzh
+                ("Clicked"::ghczmprim:GHCziPrim.Addrzh)))};
+   findNamerDb :: (ghczmprim:GHCziTypes.ZMZN
+                   ghczmprim:GHCziTypes.Char)
+                  ->
+                  DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window ->
+                  (base:GHCziIOBase.IO
+                   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFrameworkElement.findName
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.zdf2;
+   mainrmi :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+     @ ghczmprim:GHCziUnit.Z0T
+     (createWindowrmc
+      (base:GHCziBase.unpackCStringzh
+       ("Window1.xaml"::ghczmprim:GHCziPrim.Addrzh)))
+     (\ (windowamG::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window) ->
+          base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+          @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+          @ ghczmprim:GHCziUnit.Z0T
+          (base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+           @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+           @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+           (DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+            @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziWindow.Window
+            @ ((base:GHCziIOBase.IO
+                DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object))
+            windowamG
+            (findNamerDb
+             (base:GHCziBase.unpackCStringzh
+              ("Button1"::ghczmprim:GHCziPrim.Addrzh))))
+           (\ (iobamC::DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) ->
+                %case ((base:GHCziIOBase.IO
+                        DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button)) (base:DataziTypeable.cast
+                                                                                                 @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                                                                                 @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                                                                                                 DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf1
+                                                                                                 DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.zdf1
+                                                                                                 iobamC)
+                %of (wildB1::(base:DataziMaybe.Maybe
+                              DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button))
+                  {base:DataziMaybe.Nothing ->
+                     base:GHCziErr.error
+                     @ ((base:GHCziIOBase.IO
+                         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button))
+                     (base:GHCziBase.unpackCStringzh
+                      ("Not a Button"::ghczmprim:GHCziPrim.Addrzh));
+                   base:DataziMaybe.Just
+                   (bamE::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button) ->
+                     base:GHCziBase.return @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+                     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                     bamE}))
+          (\ (button1amI::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button) ->
+               base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+               @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventHandler.RoutedEventHandler
+               @ ghczmprim:GHCziUnit.Z0T
+               (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventHandler.newRoutedEventHandler
+                onClickrme)
+               (\ (handleamK::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziRoutedEventHandler.RoutedEventHandler) ->
+                    base:GHCziBase.zgzg @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+                    @ ghczmprim:GHCziUnit.Z0T @ ghczmprim:GHCziUnit.Z0T
+                    (DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+                     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziControlsziButton.Button
+                     @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) button1amI
+                     (addClickrD7 handleamK))
+                    (base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+                     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.Application
+                     @ ghczmprim:GHCziUnit.Z0T
+                     (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.newApplication
+                      ghczmprim:GHCziUnit.Z0T)
+                     (\ (appamM::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.Application) ->
+                          DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+                          @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziApplication.Application
+                          @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) appamM
+                          (runrD5 windowamG))))));
+   main:ZCMain.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziTopHandler.runMainIO @ ghczmprim:GHCziUnit.Z0T mainrmi};

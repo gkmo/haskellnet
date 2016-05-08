@@ -1,0 +1,22 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs};
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.ZCTSubEventArgs aawj =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.ZCDSubEventArgs};
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.newEventArgs :: ghczmprim:GHCziUnit.Z0T
+                                                                  ->
+                                                                  (base:GHCziIOBase.IO
+                                                                   DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs) =
+     \ (dsdwI::ghczmprim:GHCziUnit.Z0T) ->
+         base:GHCziErr.undefined
+         @ ((base:GHCziIOBase.IO
+             DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.zdf1 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                           DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.zdf2 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.ZCTSubEventArgs
+                                                           DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.ZCDSubEventArgs
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs};

@@ -1,0 +1,66 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziObject
+  %newtype DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCCoObject
+    = ghczmprim:GHCziUnit.Z0T;
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject aakV =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject};
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl :: (ghczmprim:GHCziTypes.ZMZN
+                                                       base:DataziTypeable.Key) =
+     base:DataziTypeable.go
+     (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl1 :: (ghczmprim:GHCziTypes.ZMZN
+                                                        ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("DotNet.System.Object"::ghczmprim:GHCziPrim.Addrzh);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl2 :: base:DataziTypeable.TypeRep =
+     %case base:DataziTypeable.TypeRep (base:DataziTypeable.zdwmkTyCon
+                                        DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl1)
+     %of (wwaxu::(ghczmprim:GHCziPrim.Z2H
+                  ghczmprim:GHCziPrim.Intzh
+                  ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))))
+       {ghczmprim:GHCziPrim.Z2H
+        (ww1axw::ghczmprim:GHCziPrim.Intzh)
+        (ww2axx::(ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)) ->
+          %case base:DataziTypeable.TypeRep (%cast (base:DataziTypeable.lgo
+                                                    (%cast (ghczmprim:GHCziTypes.Izh ww1axw)
+                                                     (%sym base:DataziTypeable.ZCCoKey))
+                                                    DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl)
+                                             base:DataziTypeable.ZCCoKey)
+          %of (tplaxY::ghczmprim:GHCziTypes.Int)
+            {ghczmprim:GHCziTypes.Izh (tpl1ay0::ghczmprim:GHCziPrim.Intzh) ->
+               base:DataziTypeable.TypeRep tpl1ay0
+               (base:DataziTypeable.TyCon ww1axw ww2axx)
+               (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep)}};
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.a :: DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                                    -> base:DataziTypeable.TypeRep =
+     \ (xakU::DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) ->
+         DotNetProxyzm0zi0zi1:DotNetziSystemziObject.lvl2;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.equals :: %forall oakO . (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                                         oakO)
+                                                                        ->
+                                                                        oakO ->
+                                                                        oakO ->
+                                                                        (base:GHCziIOBase.IO
+                                                                         ghczmprim:GHCziBool.Bool) =
+     \ @ oawH
+       (zddSubObjectawO::(DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                          oawH))
+       (obj1akQ::oawH)
+       (obj2akS::oawH) ->
+         base:GHCziErr.undefined
+         @ ((base:GHCziIOBase.IO ghczmprim:GHCziBool.Bool));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.newObject :: (base:GHCziIOBase.IO
+                                                             DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) =
+     base:GHCziErr.undefined
+     @ ((base:GHCziIOBase.IO
+         DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf1 :: (base:DataziTypeable.ZCTTypeable
+                                                        DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) =
+     %cast (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.a)
+     (%sym
+      ((base:DataziTypeable.ZCCoZCTTypeable
+        DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object)));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf2 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                        DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object};

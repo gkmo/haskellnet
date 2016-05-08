@@ -1,0 +1,10 @@
+Version of workspace file format:
+               1
+Time of storage:
+               "Sun Mar 28 10:05:30 E. South America Standard Time 2010"
+Name of the workspace:
+               "HaskellWPF"
+File paths of contained packages:
+               ["HaskellWPF.cabal"]
+Maybe file path of an active package:
+               Just "HaskellWPF.cabal"

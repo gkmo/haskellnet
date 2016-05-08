@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.Expression" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.AtomicExpressionTree.AtomicExpression" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\AtomicExpressionTree\AtomicExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.Abstraction" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAACAAAAAAAAAAAAAAQAAQAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\Abstraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.ApplicationExpression" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQIAAACAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\ApplicationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.CaseExpression" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAABAQAAAAAAAAgAAAAAAgAAAAARAAAAgAAEAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\CaseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.LocalDefinition" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEAAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\LocalDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.ExpressionTree.Note" Collapsed="true">
+    <Position X="16.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\ExpressionTree\Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.AtomicExpressionTree.DataConstructor" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\AtomicExpressionTree\DataConstructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.AtomicExpressionTree.Literal&lt;T&gt;" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\AtomicExpressionTree\Literal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haskell.CoreParser.AbstractSyntaxTree.AtomicExpressionTree.Variable" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEgAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractSyntaxTree\AtomicExpressionTree\Variable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

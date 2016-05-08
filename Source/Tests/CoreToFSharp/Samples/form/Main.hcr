@@ -1,0 +1,84 @@
+%module main:FormTestziMain
+  %rec
+  {runrA7 :: DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+             -> (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziApplication.run
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf4;
+   addLoadrA9 :: DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler
+                 ->
+                 DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form ->
+                 (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.addLoad
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf4;
+   setTextrAb :: (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)
+                 ->
+                 DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form ->
+                 (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.setText
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf3;
+   setText1rAd :: (ghczmprim:GHCziTypes.ZMZN
+                   ghczmprim:GHCziTypes.Char)
+                  ->
+                  DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form ->
+                  (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.setText
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf3;
+   onLoadrxI :: DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object ->
+                DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs ->
+                (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     \ (faxM::DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object)
+       (argaxO::DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs) ->
+         %case ((base:GHCziIOBase.IO
+                 ghczmprim:GHCziUnit.Z0T)) (base:DataziTypeable.cast
+                                            @ DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                            @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+                                            DotNetProxyzm0zi0zi1:DotNetziSystemziObject.zdf1
+                                            DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf1
+                                            faxM)
+         %of (wildB1::(base:DataziMaybe.Maybe
+                       DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form))
+           {base:DataziMaybe.Nothing ->
+              base:GHCziBase.return @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+              @ ghczmprim:GHCziUnit.Z0T ghczmprim:GHCziUnit.Z0T;
+            base:DataziMaybe.Just
+            (xaxQ::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) ->
+              DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+              @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+              @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) xaxQ
+              (setText1rAd
+               (base:GHCziBase.unpackCStringzh
+                ("Loaded"::ghczmprim:GHCziPrim.Addrzh)))};
+   mainrxK :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler
+     @ ghczmprim:GHCziUnit.Z0T
+     (DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.newEventHandler
+      onLoadrxI)
+     (\ (handleraxS::DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) ->
+          base:GHCziBase.zgzgze @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+          @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+          @ ghczmprim:GHCziUnit.Z0T
+          (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.newForm
+           ghczmprim:GHCziUnit.Z0T)
+          (\ (faxU::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) ->
+               base:GHCziBase.zgzg @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+               @ ghczmprim:GHCziUnit.Z0T @ ghczmprim:GHCziUnit.Z0T
+               (DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+                @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+                @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) faxU
+                (setTextrAb
+                 (base:GHCziBase.unpackCStringzh
+                  ("Haskell.NET"::ghczmprim:GHCziPrim.Addrzh))))
+               (base:GHCziBase.zgzg @ base:GHCziIOBase.IO base:GHCziIOBase.zdf25
+                @ ghczmprim:GHCziUnit.Z0T @ ghczmprim:GHCziUnit.Z0T
+                (DotNetProxyzm0zi0zi1:DotNetziSystem.zh
+                 @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+                 @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) faxU
+                 (addLoadrA9 handleraxS))
+                (runrA7 faxU))));
+   main:ZCMain.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziTopHandler.runMainIO @ ghczmprim:GHCziUnit.Z0T mainrxK};

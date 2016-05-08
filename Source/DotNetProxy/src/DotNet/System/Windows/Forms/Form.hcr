@@ -1,0 +1,84 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form};
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm aa18I =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCDSubForm};
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl :: (ghczmprim:GHCziTypes.ZMZN
+                                                                     base:DataziTypeable.Key) =
+     base:DataziTypeable.go
+     (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl1 :: (ghczmprim:GHCziTypes.ZMZN
+                                                                      ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("DotNet.System.Windows.Forms.Form.Form"::ghczmprim:GHCziPrim.Addrzh);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl2 :: base:DataziTypeable.TypeRep =
+     %case base:DataziTypeable.TypeRep (base:DataziTypeable.zdwmkTyCon
+                                        DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl1)
+     %of (wwiyh::(ghczmprim:GHCziPrim.Z2H
+                  ghczmprim:GHCziPrim.Intzh
+                  ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))))
+       {ghczmprim:GHCziPrim.Z2H
+        (ww1iyj::ghczmprim:GHCziPrim.Intzh)
+        (ww2iyk::(ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)) ->
+          %case base:DataziTypeable.TypeRep (%cast (base:DataziTypeable.lgo
+                                                    (%cast (ghczmprim:GHCziTypes.Izh ww1iyj)
+                                                     (%sym base:DataziTypeable.ZCCoKey))
+                                                    DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl)
+                                             base:DataziTypeable.ZCCoKey)
+          %of (tplizz0::ghczmprim:GHCziTypes.Int)
+            {ghczmprim:GHCziTypes.Izh (tpl1izz2::ghczmprim:GHCziPrim.Intzh) ->
+               base:DataziTypeable.TypeRep tpl1izz2
+               (base:DataziTypeable.TyCon ww1iyj ww2iyk)
+               (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep)}};
+   lvl3r1an :: (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("NotImplemented"::ghczmprim:GHCziPrim.Addrzh);
+   lvl4r1ap :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziErr.error
+     @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) lvl3r1an;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.a :: DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form
+                                                                  -> base:DataziTypeable.TypeRep =
+     \ (xa18H::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) ->
+         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.lvl2;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.addLoad :: %forall fa18F . (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm
+                                                                                         fa18F)
+                                                                                        ->
+                                                                                        DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler
+                                                                                        ->
+                                                                                        fa18F ->
+                                                                                        (base:GHCziIOBase.IO
+                                                                                         ghczmprim:GHCziUnit.Z0T) =
+     \ @ fa18V
+       (zddSubForma18Y::(DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm
+                         fa18V))
+       (dsd19a::DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler)
+       (ds1d19b::fa18V) ->
+         lvl4r1ap;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.newForm :: ghczmprim:GHCziUnit.Z0T
+                                                                        ->
+                                                                        (base:GHCziIOBase.IO
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) =
+     base:GHCziErr.error
+     @ (ghczmprim:GHCziUnit.Z0T ->
+        (base:GHCziIOBase.IO
+         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form))
+     lvl3r1an;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf1 :: (base:DataziTypeable.ZCTTypeable
+                                                                      DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) =
+     %cast (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.a)
+     (%sym
+      ((base:DataziTypeable.ZCCoZCTTypeable
+        DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form)));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf2 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                                      DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf3 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                                                                      DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCDSubControl
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.zdf4 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm
+                                                                      DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCDSubForm
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.Form};

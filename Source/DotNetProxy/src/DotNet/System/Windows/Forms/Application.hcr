@@ -1,0 +1,19 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziApplication
+  %rec
+  {lvlr1Qm :: (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("NotImplemented"::ghczmprim:GHCziPrim.Addrzh);
+   lvl1r1Qo :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziErr.error
+     @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) lvlr1Qm;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziApplication.run :: %forall fa1Pr . (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm
+                                                                                            fa1Pr)
+                                                                                           ->
+                                                                                           fa1Pr ->
+                                                                                           (base:GHCziIOBase.IO
+                                                                                            ghczmprim:GHCziUnit.Z0T) =
+     \ @ fa1Pt
+       (zddSubForma1Pw::(DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziForm.ZCTSubForm
+                         fa1Pt))
+       (dsd1Px::fa1Pt) ->
+         lvl1r1Qo};

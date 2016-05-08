@@ -1,0 +1,6 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystem
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystem.zh :: %forall taYX t1aZZ0 . taYX
+                                                                   -> (taYX -> t1aZZ0) -> t1aZZ0 =
+     \ @ taYX @ t1aZZ0 (objaYQ::taYX) (methodaYS::taYX -> t1aZZ0) ->
+         methodaYS objaYQ};

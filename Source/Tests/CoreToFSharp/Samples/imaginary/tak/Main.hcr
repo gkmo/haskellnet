@@ -1,0 +1,92 @@
+%module main:Main
+  %rec
+  {main:Main.zdwtak :: ghczmprim:GHCziPrim.Intzh ->
+                       ghczmprim:GHCziPrim.Intzh ->
+                       ghczmprim:GHCziPrim.Intzh -> ghczmprim:GHCziPrim.Intzh =
+     \ (wwsF0::ghczmprim:GHCziPrim.Intzh)
+       (ww1sF4::ghczmprim:GHCziPrim.Intzh)
+       (ww2sF8::ghczmprim:GHCziPrim.Intzh) ->
+         %case ghczmprim:GHCziPrim.Intzh (ghczmprim:GHCziPrim.zlzh ww1sF4
+                                          wwsF0)
+         %of (wildavY::ghczmprim:GHCziBool.Bool)
+           {ghczmprim:GHCziBool.False ->
+              ww2sF8;
+            ghczmprim:GHCziBool.True ->
+              %case ghczmprim:GHCziPrim.Intzh (main:Main.zdwtak
+                                               (ghczmprim:GHCziPrim.zmzh wwsF0
+                                                (1::ghczmprim:GHCziPrim.Intzh))
+                                               ww1sF4 ww2sF8)
+              %of (ww3sFc::ghczmprim:GHCziPrim.Intzh)
+                {%_ ->
+                   %case ghczmprim:GHCziPrim.Intzh (main:Main.zdwtak
+                                                    (ghczmprim:GHCziPrim.zmzh ww1sF4
+                                                     (1::ghczmprim:GHCziPrim.Intzh))
+                                                    ww2sF8 wwsF0)
+                   %of (ww4XFP::ghczmprim:GHCziPrim.Intzh)
+                     {%_ ->
+                        %case ghczmprim:GHCziPrim.Intzh (main:Main.zdwtak
+                                                         (ghczmprim:GHCziPrim.zmzh ww2sF8
+                                                          (1::ghczmprim:GHCziPrim.Intzh))
+                                                         wwsF0 ww1sF4)
+                        %of (ww5XGS::ghczmprim:GHCziPrim.Intzh)
+                          {%_ ->
+                             main:Main.zdwtak ww3sFc ww4XFP ww5XGS}}}};
+   main:Main.lvl :: ghczmprim:GHCziTypes.Char =
+     ghczmprim:GHCziTypes.Czh ('\x0a'::ghczmprim:GHCziPrim.Charzh);
+   main:Main.lvl1 :: (ghczmprim:GHCziTypes.ZMZN
+                      ghczmprim:GHCziTypes.Char) =
+     ghczmprim:GHCziTypes.ZC @ ghczmprim:GHCziTypes.Char main:Main.lvl
+     (ghczmprim:GHCziTypes.ZMZN @ ghczmprim:GHCziTypes.Char);
+   main:Main.lvl2 :: (ghczmprim:GHCziTypes.ZMZN
+                      ghczmprim:GHCziTypes.Char) =
+     %case ((ghczmprim:GHCziTypes.ZMZN
+             ghczmprim:GHCziTypes.Char)) (main:Main.zdwtak
+                                          (12::ghczmprim:GHCziPrim.Intzh)
+                                          (1::ghczmprim:GHCziPrim.Intzh)
+                                          (25::ghczmprim:GHCziPrim.Intzh))
+     %of (wwsFc::ghczmprim:GHCziPrim.Intzh)
+       {%_ ->
+          base:GHCziShow.showl
+          (base:GHCziShow.zdwshowSignedInt (0::ghczmprim:GHCziPrim.Intzh)
+           wwsFc main:Main.lvl1)
+          (ghczmprim:GHCziTypes.ZMZN @ ghczmprim:GHCziTypes.Char)};
+   main:Main.lvl3 :: (ghczmprim:GHCziTypes.ZMZN
+                      ghczmprim:GHCziTypes.Char) =
+     ghczmprim:GHCziTypes.ZC @ ghczmprim:GHCziTypes.Char
+     base:GHCziShow.a78 main:Main.lvl2;
+   main:Main.a :: (ghczmprim:GHCziPrim.Statezh
+                   ghczmprim:GHCziPrim.RealWorld)
+                  ->
+                  (ghczmprim:GHCziPrim.Z2H
+                   ((ghczmprim:GHCziPrim.Statezh ghczmprim:GHCziPrim.RealWorld))
+                   ghczmprim:GHCziUnit.Z0T) =
+     \ (etaayf::(ghczmprim:GHCziPrim.Statezh
+                 ghczmprim:GHCziPrim.RealWorld)) ->
+         %case ((ghczmprim:GHCziPrim.Z2H
+                 ((ghczmprim:GHCziPrim.Statezh ghczmprim:GHCziPrim.RealWorld))
+                 ghczmprim:GHCziUnit.Z0T)) (base:GHCziIO.a29 base:GHCziHandle.stdout
+                                            main:Main.lvl3 etaayf)
+         %of (wildaEn::(ghczmprim:GHCziPrim.Z2H
+                        ((ghczmprim:GHCziPrim.Statezh ghczmprim:GHCziPrim.RealWorld))
+                        ghczmprim:GHCziUnit.Z0T))
+           {ghczmprim:GHCziPrim.Z2H
+            (newzusaEp::(ghczmprim:GHCziPrim.Statezh
+                         ghczmprim:GHCziPrim.RealWorld))
+            (a89aEq::ghczmprim:GHCziUnit.Z0T) ->
+              base:GHCziIO.zdwa10 base:GHCziHandle.stdout
+              ('\x0a'::ghczmprim:GHCziPrim.Charzh) newzusaEp};
+   main:Main.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     %cast (main:Main.a)
+     (%sym ((base:GHCziIOBase.ZCCoIO ghczmprim:GHCziUnit.Z0T)));
+   main:Main.a1 :: (ghczmprim:GHCziPrim.Statezh
+                    ghczmprim:GHCziPrim.RealWorld)
+                   ->
+                   (ghczmprim:GHCziPrim.Z2H
+                    ((ghczmprim:GHCziPrim.Statezh ghczmprim:GHCziPrim.RealWorld))
+                    ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziTopHandler.a4 @ ghczmprim:GHCziUnit.Z0T
+     (%cast (main:Main.a)
+      (%sym ((base:GHCziIOBase.ZCCoIO ghczmprim:GHCziUnit.Z0T))));
+   main:ZCMain.main :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     %cast (main:Main.a1)
+     (%sym ((base:GHCziIOBase.ZCCoIO ghczmprim:GHCziUnit.Z0T)))};

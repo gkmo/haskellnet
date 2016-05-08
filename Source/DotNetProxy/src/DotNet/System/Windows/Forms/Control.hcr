@@ -1,0 +1,97 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl
+  %newtype DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCCoControl
+    = ghczmprim:GHCziUnit.Z0T;
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl aa10K =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCDSubControl};
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl :: (ghczmprim:GHCziTypes.ZMZN
+                                                                        base:DataziTypeable.Key) =
+     base:DataziTypeable.go
+     (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl1 :: (ghczmprim:GHCziTypes.ZMZN
+                                                                         ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("DotNet.System.Windows.Forms.Form.Control"::ghczmprim:GHCziPrim.Addrzh);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl2 :: base:DataziTypeable.TypeRep =
+     %case base:DataziTypeable.TypeRep (base:DataziTypeable.zdwmkTyCon
+                                        DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl1)
+     %of (wwiyh::(ghczmprim:GHCziPrim.Z2H
+                  ghczmprim:GHCziPrim.Intzh
+                  ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))))
+       {ghczmprim:GHCziPrim.Z2H
+        (ww1iyj::ghczmprim:GHCziPrim.Intzh)
+        (ww2iyk::(ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)) ->
+          %case base:DataziTypeable.TypeRep (%cast (base:DataziTypeable.lgo
+                                                    (%cast (ghczmprim:GHCziTypes.Izh ww1iyj)
+                                                     (%sym base:DataziTypeable.ZCCoKey))
+                                                    DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl)
+                                             base:DataziTypeable.ZCCoKey)
+          %of (tplizz0::ghczmprim:GHCziTypes.Int)
+            {ghczmprim:GHCziTypes.Izh (tpl1izz2::ghczmprim:GHCziPrim.Intzh) ->
+               base:DataziTypeable.TypeRep tpl1izz2
+               (base:DataziTypeable.TyCon ww1iyj ww2iyk)
+               (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep)}};
+   lvl3r12H :: (ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("NotImplemented"::ghczmprim:GHCziPrim.Addrzh);
+   lvl4r12J :: (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T) =
+     base:GHCziErr.error
+     @ ((base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T)) lvl3r12H;
+   lvl5r12L :: (base:GHCziIOBase.IO
+                ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))) =
+     base:GHCziErr.error
+     @ ((base:GHCziIOBase.IO
+         ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))))
+     lvl3r12H;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.a :: DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control
+                                                                     ->
+                                                                     base:DataziTypeable.TypeRep =
+     \ (xa10J::DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control) ->
+         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.lvl2;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.getText :: %forall ca10D . (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                                                                                            ca10D)
+                                                                                           ->
+                                                                                           ca10D ->
+                                                                                           (base:GHCziIOBase.IO
+                                                                                            ((ghczmprim:GHCziTypes.ZMZN
+                                                                                              ghczmprim:GHCziTypes.Char))) =
+     \ @ ca10Y
+       (zddSubControla111::(DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                            ca10Y))
+       (controla10H::ca10Y) ->
+         lvl5r12L;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.setText :: %forall ca10F . (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                                                                                            ca10F)
+                                                                                           ->
+                                                                                           (ghczmprim:GHCziTypes.ZMZN
+                                                                                            ghczmprim:GHCziTypes.Char)
+                                                                                           ->
+                                                                                           ca10F ->
+                                                                                           (base:GHCziIOBase.IO
+                                                                                            ghczmprim:GHCziUnit.Z0T) =
+     \ @ ca112
+       (zddSubControla115::(DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                            ca112))
+       (dsd11g::(ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))
+       (ds1d11h::ca112) ->
+         lvl4r12J;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.newControl :: (base:GHCziIOBase.IO
+                                                                               DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control) =
+     base:GHCziErr.error
+     @ ((base:GHCziIOBase.IO
+         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control))
+     lvl3r12H;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.zdf1 :: (base:DataziTypeable.ZCTTypeable
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control) =
+     %cast (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.a)
+     (%sym
+      ((base:DataziTypeable.ZCCoZCTTypeable
+        DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control)));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.zdf2 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.zdf3 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCTSubControl
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.ZCDSubControl
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziWindowsziFormsziControl.Control};

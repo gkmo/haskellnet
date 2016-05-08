@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB43C147-0526-4AA7-BF93-B3D2877FEAD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Haskell.CoreToFSharp</RootNamespace>
+    <AssemblyName>Haskell.CoreToFSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.1.0.39271, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Utility, Version=0.1.0.39272, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Antlr3.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=2.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompilationTree\FSharpApplicationExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpArgumentUnit.cs" />
+    <Compile Include="CompilationTree\FSharpAtomicTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpCastExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpCompilationUnit.cs" />
+    <Compile Include="CompilationTree\FSharpConstructorAlternativeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpConstructorExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpConstructorTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpDefaultAlternativeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpExternalConstructorExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpExternalVariableUnit.cs" />
+    <Compile Include="CompilationTree\FSharpFunctionTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpGenericTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLambdaExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLazyExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLetExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLiteralAlternativeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLiteralExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpLocalVariableUnit.cs" />
+    <Compile Include="CompilationTree\FSharpMatchAlternativeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpMatchExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpTypeDeclarationUnit.cs" />
+    <Compile Include="CompilationTree\FSharpExpressionUnit.cs" />
+    <Compile Include="CompilationTree\FSharpTypeBindingUnit.cs" />
+    <Compile Include="CompilationTree\FSharpModuleUnit.cs" />
+    <Compile Include="CompilationTree\FSharpTypeReferenceUnit.cs" />
+    <Compile Include="CompilationTree\FSharpTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpUnionCaseUnit.cs" />
+    <Compile Include="CompilationTree\FSharpUnknownTypeUnit.cs" />
+    <Compile Include="CompilationTree\FSharpUnknownVariableUnit.cs" />
+    <Compile Include="CompilationTree\FSharpValueDeclarationUnit.cs" />
+    <Compile Include="ExternalModulesHelper.cs" />
+    <Compile Include="FSharpWriter.cs" />
+    <Compile Include="CoreToFSharp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libs\GHC-Prim\GHC-Prim.fsproj">
+      <Project>{CEBA34F1-9BB0-4516-A912-CEC1134CE474}</Project>
+      <Name>GHC-Prim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Haskell.CoreParser\Haskell.CoreParser.csproj">
+      <Project>{084B245C-5372-4631-BE9C-93B919734B30}</Project>
+      <Name>Haskell.CoreParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

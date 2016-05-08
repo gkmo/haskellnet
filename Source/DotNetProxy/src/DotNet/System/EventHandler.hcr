@@ -1,0 +1,67 @@
+%module DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler
+  %newtype DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.ZCCoEventHandler
+    = ghczmprim:GHCziUnit.Z0T;
+  %data DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.ZCTSubEventHandler aazz8 =
+    {DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.ZCDSubEventHandler};
+  %rec
+  {DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl :: (ghczmprim:GHCziTypes.ZMZN
+                                                             base:DataziTypeable.Key) =
+     base:DataziTypeable.go
+     (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl1 :: (ghczmprim:GHCziTypes.ZMZN
+                                                              ghczmprim:GHCziTypes.Char) =
+     base:GHCziBase.unpackCStringzh
+     ("DotNet.System.EventHandler.EventHandler"::ghczmprim:GHCziPrim.Addrzh);
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl2 :: base:DataziTypeable.TypeRep =
+     %case base:DataziTypeable.TypeRep (base:DataziTypeable.zdwmkTyCon
+                                        DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl1)
+     %of (wwiA1::(ghczmprim:GHCziPrim.Z2H
+                  ghczmprim:GHCziPrim.Intzh
+                  ((ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char))))
+       {ghczmprim:GHCziPrim.Z2H
+        (ww1iA3::ghczmprim:GHCziPrim.Intzh)
+        (ww2iA4::(ghczmprim:GHCziTypes.ZMZN ghczmprim:GHCziTypes.Char)) ->
+          %case base:DataziTypeable.TypeRep (%cast (base:DataziTypeable.lgo
+                                                    (%cast (ghczmprim:GHCziTypes.Izh ww1iA3)
+                                                     (%sym base:DataziTypeable.ZCCoKey))
+                                                    DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl)
+                                             base:DataziTypeable.ZCCoKey)
+          %of (tpliAv::ghczmprim:GHCziTypes.Int)
+            {ghczmprim:GHCziTypes.Izh (tpl1iAx::ghczmprim:GHCziPrim.Intzh) ->
+               base:DataziTypeable.TypeRep tpl1iAx
+               (base:DataziTypeable.TyCon ww1iA3 ww2iA4)
+               (ghczmprim:GHCziTypes.ZMZN @ base:DataziTypeable.TypeRep)}};
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.a :: DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler
+                                                          -> base:DataziTypeable.TypeRep =
+     \ (xazz7::DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) ->
+         DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.lvl2;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.newEventHandler :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object
+                                                                         ->
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs
+                                                                         ->
+                                                                         (base:GHCziIOBase.IO
+                                                                          ghczmprim:GHCziUnit.Z0T))
+                                                                        ->
+                                                                        (base:GHCziIOBase.IO
+                                                                         DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) =
+     base:GHCziErr.undefined
+     @ ((DotNetProxyzm0zi0zi1:DotNetziSystemziObject.Object ->
+         DotNetProxyzm0zi0zi1:DotNetziSystemziEventArgs.EventArgs ->
+         (base:GHCziIOBase.IO ghczmprim:GHCziUnit.Z0T))
+        ->
+        (base:GHCziIOBase.IO
+         DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.zdf1 :: (base:DataziTypeable.ZCTTypeable
+                                                              DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) =
+     %cast (DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.a)
+     (%sym
+      ((base:DataziTypeable.ZCCoZCTTypeable
+        DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler)));
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.zdf2 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCTSubObject
+                                                              DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziObject.ZCDSubObject
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler;
+   DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.zdf3 :: (DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.ZCTSubEventHandler
+                                                              DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler) =
+     DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.ZCDSubEventHandler
+     @ DotNetProxyzm0zi0zi1:DotNetziSystemziEventHandler.EventHandler};

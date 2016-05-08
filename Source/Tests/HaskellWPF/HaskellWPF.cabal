@@ -1,0 +1,49 @@
+name: HaskellWPF
+version: 0.0.1
+cabal-version: -any
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+copyright:
+maintainer:
+build-depends: DotNetProxy -any, base -any
+stability:
+homepage:
+package-url:
+bug-reports:
+synopsis: Haskell using WPF
+description: .
+             .
+             .
+category:
+author:
+tested-with:
+data-files:
+data-dir: ""
+extra-source-files:
+extra-tmp-files:
+ 
+executable: HaskellWPF
+main-is: Main.hs
+buildable: True
+build-tools:
+cpp-options:
+cc-options:
+ld-options:
+pkgconfig-depends:
+frameworks:
+c-sources:
+extensions:
+extra-libraries:
+extra-lib-dirs:
+includes:
+install-includes:
+include-dirs:
+hs-source-dirs: src
+other-modules:
+ghc-prof-options:
+ghc-shared-options:
+ghc-options: -fext-core -O0
+hugs-options:
+nhc98-options:
+jhc-options:
